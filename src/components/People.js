@@ -5,7 +5,7 @@ import Planet from "./Planet";
 const People = () => {
   const [page, setPage] = useState(1);
   const fetchPeople = async (page = 1) => {
-    const res = await fetch(`http://swapi.dev/api/people/?page=${page}`);
+    const res = await fetch(`https://swapi.dev/api/people/?page=${page}`);
     return res.json();
   };
   const {
@@ -51,6 +51,6 @@ const People = () => {
       )}
     </div>
   );
-};
+};  
 
 export default People;
